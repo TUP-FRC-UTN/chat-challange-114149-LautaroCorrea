@@ -1,0 +1,14 @@
+<div class="card mb-3">
+    <div class="card-header">
+      Usuario: {{ usuario.nombre }}
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="enviarMensaje()">
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" class="form-control" rows="3" [(ngModel)]="mensajeTexto" name="mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Guardar</button>
+      </form>
+    </div>
+  </div>
